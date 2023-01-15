@@ -1,0 +1,21 @@
+{
+  "name": "push-docker",
+  "version": "1.0.0",
+  "description": "### GitLab CI CD pipeline to push the docker image to Container registry",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "./node_modules/.bin/mocha ./test/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3"
+  }
+}
