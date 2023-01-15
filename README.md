@@ -139,5 +139,7 @@ docker push registry.gitlab.com/gitlab-container-register-example/alpinegitlab:t
 ```
 
 ## Other resources
+- Install GitLab Runner
 [Install GitLab Runner manually on GNU/Linux](https://docs.gitlab.com/runner/install/linux-manually.html)
+- Registering runners
 [Registering runners](https://docs.gitlab.com/runner/register/index.html)
