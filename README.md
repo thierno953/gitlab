@@ -137,3 +137,7 @@ docker build -t registry.gitlab.com/gitlab-container-register-example/alpinegitl
 ```bash
 docker push registry.gitlab.com/gitlab-container-register-example/alpinegitlab:test
 ```
+
+## Other resources
+[Install GitLab Runner manually on GNU/Linux](https://docs.gitlab.com/runner/install/linux-manually.html)
+[Registering runners](https://docs.gitlab.com/runner/register/index.html)
