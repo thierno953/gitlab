@@ -119,3 +119,21 @@ sudo ./gitlab-runner register
 ```bash
 sudo ./gitlab-runner verify
 ```
+
+### Container Registry
+
+```bash
+docker login registry.gitlab.com
+```
+
+```bash
+docker login registry.gitlab.com -u name -p mypassword
+```
+
+```bash
+docker build -t registry.gitlab.com/gitlab-container-register-example/alpinegitlab:test
+```
+
+```bash
+docker push registry.gitlab.com/gitlab-container-register-example/alpinegitlab:test
+```
