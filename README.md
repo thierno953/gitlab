@@ -66,3 +66,56 @@ root@gitlab-ce:~# gitlab-ctl stop
 root@gitlab-ce:~# gitlab-ctl start
 root@gitlab-ce:~# gitlab-ctl restart logrotate
 ```
+
+## Create SSH Key
+
+```bash
+ssh-keygen -t ed25519 -C "Gitlab Key Pair"
+cat ~/.ssh/
+cat ~/.ssh/id_ed25519.pub
+ssh -T git@gitlab.com
+```
+
+### GitLab Runner Linux
+
+```bash
+sudo curl -L --output /usr/local/bin/gitlab-runner "https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64"
+```
+
+```bash
+cd  /usr/local/bin
+ls
+```
+
+```bash
+sudo chmod +x /usr/local/bin/gitlab-runner
+ls
+```
+
+```bash
+sudo useradd --comment 'GitLab Runner' --create-home gitlab-runner --shell /bin/bash
+```
+
+```bash
+sudo ./gitlab-runner install --user=gitlab-runner --working-directory=/home/gitlab-runner
+```
+
+```bash
+sudo ./gitlab-runner start
+```
+
+```bash
+sudo ./gitlab-runner status
+```
+
+```bash
+sudo cat /etc/systemd/system/gitlab-runner.service
+```
+
+```bash
+sudo ./gitlab-runner register
+```
+
+```bash
+sudo ./gitlab-runner verify
+```
