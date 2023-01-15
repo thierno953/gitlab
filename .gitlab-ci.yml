@@ -1,0 +1,19 @@
+stages:
+  - build
+  - test
+  - deploy
+
+Build Job:
+  stage: build
+  script:
+    - echo "This is a first sample Build job"
+
+Test Job:
+  stage: test
+  script:
+    - echo "This is a first sample Test job"
+
+Deploy Job:
+  stage: deploy
+  script:
+    - echo "This is a first sample Deploy job"
